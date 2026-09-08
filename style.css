@@ -145,20 +145,6 @@ a:hover { color: var(--ink); }
   color: #10201e;
 }
 
-.header-phone {
-  margin: 16px 0 0;
-  font-size: 0.92rem;
-  color: #9aa5b2;
-}
-
-.header-phone a {
-  color: #9aa5b2;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(154, 165, 178, 0.4);
-}
-
-.header-phone a:hover { color: var(--accent-lit); border-bottom-color: var(--accent-lit); }
-
 /* ---------- sticky nav ---------- */
 
 .site-nav {
