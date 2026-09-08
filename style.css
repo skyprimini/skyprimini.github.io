@@ -4,9 +4,9 @@
   --ink:        #141a20;
   --ink-soft:   #4a5560;
   --ink-faint:  #78838f;
-  --rule:       #e4e1da;
-  --page:       #fbfaf7;
-  --panel:      #f4f2ec;
+  --rule:       #ddd8cb;
+  --page:       #f2efe6;
+  --panel:      #fffdf8;
   --dark:       #101620;
   --dark-soft:  #18202c;
   --accent:     #0f6b58;
@@ -38,6 +38,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body {
+  background-image:
+    radial-gradient(60ch 50ch at 82% 8%, rgba(15, 107, 88, 0.07), transparent 70%),
+    radial-gradient(52ch 44ch at 6% 58%, rgba(169, 118, 31, 0.06), transparent 70%);
+  background-attachment: fixed;
+}
+
 body::after {
   content: "";
   position: fixed;
@@ -45,25 +52,7 @@ body::after {
   z-index: 1;
   pointer-events: none;
   background-image: var(--grain);
-  opacity: 0.035;
-}
-
-.skip-link {
-  position: absolute;
-  left: -9999px;
-  top: 0;
-  z-index: 50;
-  padding: 12px 20px;
-  background: var(--accent);
-  color: #fff;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 0 0 8px 0;
-}
-
-.skip-link:focus {
-  left: 0;
-  color: #fff;
+  opacity: 0.055;
 }
 
 .wrap {
@@ -709,7 +698,6 @@ section > p {
   .site-nav,
   .hero-photo,
   .cta-row,
-  .skip-link,
   #photos,
   .card-image { display: none; }
 
