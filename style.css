@@ -13,6 +13,7 @@
   --accent-lit: #6fd8bd;
   --gold:       #a9761f;
   --gold-lit:   #e6bd72;
+  --lattice:    rgba(31, 26, 15, 0.055);
   --wrap:       860px;
 
   --font-head: "Space Grotesk", "Segoe UI", Helvetica, Arial, sans-serif;
@@ -40,6 +41,8 @@ body {
 
 body {
   background-image:
+    repeating-linear-gradient(45deg, transparent 0 27px, var(--lattice) 27px 28px),
+    repeating-linear-gradient(-45deg, transparent 0 27px, var(--lattice) 27px 28px),
     radial-gradient(60ch 50ch at 82% 8%, rgba(15, 107, 88, 0.07), transparent 70%),
     radial-gradient(52ch 44ch at 6% 58%, rgba(169, 118, 31, 0.06), transparent 70%);
   background-attachment: fixed;
@@ -665,6 +668,7 @@ section > p {
     --panel:     #171d26;
     --accent:    #6fd8bd;
     --gold:      #e6bd72;
+    --lattice:   rgba(255, 255, 255, 0.04);
   }
 
   .site-header { border-bottom: 1px solid var(--rule); }
