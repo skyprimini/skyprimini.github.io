@@ -1,4 +1,4 @@
-/* Syanne Voxland — portfolio styles */
+/* Syanne Voxland, portfolio styles */
 
 :root {
   --ink:        #1c2027;
@@ -80,6 +80,8 @@ a:hover { color: var(--ink); }
   font-size: 1.08rem;
   color: #c3cad4;
 }
+
+.tagline + .tagline { margin-top: 6px; }
 
 .header-links {
   display: flex;
