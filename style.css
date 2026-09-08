@@ -1,0 +1,321 @@
+/* Syanne Voxland — portfolio styles */
+
+:root {
+  --ink:        #1c2027;
+  --ink-soft:   #4a525e;
+  --ink-faint:  #767f8c;
+  --rule:       #e2e5ea;
+  --page:       #ffffff;
+  --panel:      #f7f8fa;
+  --dark:       #14181f;
+  --dark-soft:  #1d222b;
+  --accent:     #2f6f6b;
+  --accent-lit: #7fd0c4;
+  --wrap:       860px;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  width: 100%;
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover { color: var(--ink); }
+
+/* ---------- header ---------- */
+
+.site-header {
+  background: var(--dark);
+  color: #f2f4f7;
+}
+
+.header-inner {
+  padding-top: 72px;
+  padding-bottom: 64px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-lit);
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: clamp(2.1rem, 6vw, 3.1rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 650;
+}
+
+.tagline {
+  margin: 18px 0 0;
+  max-width: 46em;
+  font-size: 1.08rem;
+  color: #c3cad4;
+}
+
+.header-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.95rem;
+}
+
+.header-links a {
+  color: #f2f4f7;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(127, 208, 196, 0.5);
+  padding-bottom: 2px;
+}
+
+.header-links a:hover {
+  color: var(--accent-lit);
+  border-bottom-color: var(--accent-lit);
+}
+
+/* ---------- sticky nav ---------- */
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--dark-soft);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.nav-inner::-webkit-scrollbar { display: none; }
+
+.site-nav a {
+  flex: none;
+  padding: 14px 12px;
+  color: #c3cad4;
+  font-size: 0.9rem;
+  font-weight: 550;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover {
+  color: #fff;
+  border-bottom-color: var(--accent-lit);
+}
+
+/* ---------- sections ---------- */
+
+main { padding-bottom: 32px; }
+
+section {
+  padding: 56px 0;
+  border-bottom: 1px solid var(--rule);
+  scroll-margin-top: 60px;
+}
+
+section:last-of-type { border-bottom: 0; }
+
+section h2 {
+  margin: 0 0 28px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+section > p {
+  margin: 0 0 16px;
+  max-width: 62ch;
+  color: var(--ink-soft);
+}
+
+/* ---------- experience & education entries ---------- */
+
+.entry {
+  padding: 0 0 28px 20px;
+  margin-bottom: 28px;
+  border-left: 2px solid var(--rule);
+  position: relative;
+}
+
+.entry:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.entry::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 9px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.entry-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 16px;
+}
+
+.entry h3 {
+  margin: 0;
+  font-size: 1.12rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.dates {
+  margin: 0;
+  font-size: 0.88rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-faint);
+  white-space: nowrap;
+}
+
+.meta {
+  margin: 4px 0 0;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.entry ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  color: var(--ink-soft);
+}
+
+.entry li { margin-bottom: 6px; }
+
+.tags {
+  margin: 12px 0 0;
+  font-size: 0.85rem;
+  color: var(--ink-faint);
+}
+
+/* ---------- cards ---------- */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 20px 22px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.card .tags { margin-top: 6px; }
+
+.card p:not(.tags) {
+  margin: 12px 0 0;
+  font-size: 0.96rem;
+  color: var(--ink-soft);
+}
+
+/* ---------- contact ---------- */
+
+.contact-list {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--rule);
+  color: var(--ink-soft);
+}
+
+.contact-list li:last-child { border-bottom: 0; }
+
+.contact-list span {
+  flex: none;
+  width: 100px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  padding-top: 2px;
+}
+
+/* ---------- footer ---------- */
+
+.site-footer {
+  background: var(--dark);
+  color: #8a94a2;
+  padding: 28px 0;
+  font-size: 0.88rem;
+}
+
+.site-footer p { margin: 0; }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .wrap { padding: 0 18px; }
+  .header-inner { padding-top: 48px; padding-bottom: 44px; }
+  section { padding: 44px 0; }
+  .dates { white-space: normal; }
+  .contact-list span { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
