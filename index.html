@@ -5,31 +5,53 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Syanne Voxland, Software Developer</title>
 <meta name="description" content="Portfolio of Syanne Voxland, software developer at Noridian Healthcare Solutions and M.S. Computer Science student at North Dakota State University.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://skyprimini.github.io/">
+<meta property="og:title" content="Syanne Voxland, Software Developer">
+<meta property="og:description" content="Software developer at Noridian Healthcare Solutions, finishing an M.S. in Computer Science at North Dakota State University.">
+<meta property="og:image" content="https://skyprimini.github.io/images/portrait.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Syanne Voxland, Software Developer">
+<meta name="twitter:description" content="Software developer at Noridian Healthcare Solutions, finishing an M.S. in Computer Science at North Dakota State University.">
+<meta name="twitter:image" content="https://skyprimini.github.io/images/portrait.jpg">
+<meta name="theme-color" content="#14181f">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2314181f'/><text x='50' y='72' font-size='58' font-family='Segoe UI,Helvetica,Arial,sans-serif' font-weight='600' fill='%237fd0c4' text-anchor='middle'>SV</text></svg>">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap header-inner">
-    <p class="eyebrow">Fargo, ND</p>
-    <h1>Syanne Voxland</h1>
-    <p class="tagline">Software developer at Noridian Healthcare Solutions.</p>
-    <p class="tagline">Finishing an M.S. in Computer Science at North Dakota State University.</p>
-    <ul class="header-links">
-      <li><a href="mailto:syannevoxland@gmail.com">syannevoxland@gmail.com</a></li>
-      <li><a href="tel:+12182054537">218.205.4537</a></li>
-      <li><a href="https://www.linkedin.com/in/syanne-voxland-752334221/" target="_blank" rel="noopener">LinkedIn</a></li>
-    </ul>
+    <div class="hero-text">
+      <p class="eyebrow">Fargo, ND</p>
+      <h1>Syanne Voxland</h1>
+      <p class="tagline">Software developer at Noridian Healthcare Solutions.</p>
+      <p class="tagline">Finishing an M.S. in Computer Science at North Dakota State University.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:syannevoxland@gmail.com">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/syanne-voxland-752334221/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/skyprimini" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p class="header-phone"><a href="tel:+12182054537">218.205.4537</a></p>
+    </div>
+    <figure class="hero-photo">
+      <img src="images/portrait.jpg" width="900" height="1200"
+           alt="Syanne Voxland in cap and gown on the steps of an NDSU building">
+    </figure>
   </div>
 </header>
 
 <nav class="site-nav" aria-label="Section navigation">
   <div class="wrap nav-inner">
     <a href="#about">About</a>
+    <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#education">Education</a>
     <a href="#certifications">Certifications &amp; Honors</a>
+    <a href="#photos">Photos</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -51,6 +73,68 @@
       play violin in the orchestra at Minnesota State University Moorhead, and I volunteer
       with 4 Luv of Dog Rescue, caring for rescue dogs and helping at adoption events.
     </p>
+
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-groups">
+
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <ul class="pills">
+          <li>C#</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>TypeScript</li>
+          <li>JavaScript</li>
+          <li>PowerShell</li>
+          <li>HTML/CSS</li>
+          <li>YAML</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3>Frameworks &amp; Web</h3>
+        <ul class="pills">
+          <li>React</li>
+          <li>Angular</li>
+          <li>.NET</li>
+          <li>.NET Framework</li>
+          <li>Web API</li>
+          <li>FastAPI</li>
+          <li>Vite</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3>Cloud &amp; DevOps</h3>
+        <ul class="pills">
+          <li>Azure</li>
+          <li>Azure SQL</li>
+          <li>Azure Pipelines</li>
+          <li>CI/CD</li>
+          <li>Coverage metrics</li>
+          <li>Agile</li>
+          <li>Git</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3>Security &amp; Systems</h3>
+        <ul class="pills">
+          <li>Vulnerability remediation</li>
+          <li>Incident response</li>
+          <li>Active Directory</li>
+          <li>ServiceNow</li>
+          <li>VMware/vSphere</li>
+          <li>Windows OS</li>
+          <li>DISM</li>
+          <li>VPN</li>
+        </ul>
+      </div>
+
+    </div>
   </section>
 
   <section id="experience">
@@ -201,7 +285,9 @@
         </p>
       </article>
 
-      <article class="card">
+      <article class="card card-featured">
+        <img class="card-image" src="images/reel-02-capstone.jpg" width="800" height="600" loading="lazy"
+             alt="Syanne and her capstone team presenting the YANGify poster at NDSU">
         <h3>YANG Model Configuration UI</h3>
         <p class="tags">Capstone &middot; TypeScript &middot; React + Vite &middot; FastAPI &middot; JSON/XML</p>
         <p>
@@ -277,6 +363,80 @@
     </div>
   </section>
 
+  <section id="photos">
+    <h2>Photos</h2>
+    <p>Graduation, the capstone showcase, orchestra, and the computer science friends who
+       made the last few years what they were.</p>
+
+    <div class="reel" tabindex="0" role="region" aria-label="Photo reel, scrollable">
+      <figure>
+        <img src="images/reel-01-grad-steps.jpg" width="800" height="1067" loading="lazy"
+             alt="Syanne in cap and gown sitting on the steps of an NDSU building">
+        <figcaption>Graduation day at NDSU</figcaption>
+      </figure>
+      <figure>
+        <img src="images/reel-02-capstone.jpg" width="800" height="600" loading="lazy"
+             alt="Syanne and her capstone team beside the YANGify poster">
+        <figcaption>The YANGify capstone team and poster</figcaption>
+      </figure>
+      <figure>
+        <img src="images/reel-03-violin.jpg" width="800" height="1067" loading="lazy"
+             alt="Syanne holding a violin case on campus with two friends">
+        <figcaption>Orchestra days, violin case in tow</figcaption>
+      </figure>
+      <figure>
+        <img src="images/reel-04-cs-group.jpg" width="800" height="1422" loading="lazy"
+             alt="Computer science classmates gathered outside on a cloudy day">
+        <figcaption>The computer science crew at NDSU</figcaption>
+      </figure>
+      <figure>
+        <img src="images/reel-05-cs-dinner.jpg" width="800" height="1067" loading="lazy"
+             alt="Computer science classmates around a long table at a restaurant">
+        <figcaption>Celebrating the end of a semester</figcaption>
+      </figure>
+      <figure>
+        <img src="images/reel-06-cohort.jpg" width="800" height="600" loading="lazy"
+             alt="A group of graduates in green caps and gowns at the arena">
+        <figcaption>Lined up before commencement</figcaption>
+      </figure>
+      <figure>
+        <img src="images/reel-07-bison.jpg" width="800" height="1067" loading="lazy"
+             alt="Syanne in cap and gown with family at the NDSU bison statue">
+        <figcaption>At the bison statue</figcaption>
+      </figure>
+      <figure>
+        <img src="images/reel-08-friends.jpg" width="800" height="1067" loading="lazy"
+             alt="Syanne in cap and gown with two friends indoors">
+        <figcaption>With friends after the ceremony</figcaption>
+      </figure>
+      <figure>
+        <img src="images/reel-09-diploma.jpg" width="800" height="499" loading="lazy"
+             alt="Syanne holding her diploma outdoors with family">
+        <figcaption>Diploma in hand</figcaption>
+      </figure>
+      <figure>
+        <img src="images/reel-10-campus.jpg" width="800" height="1067" loading="lazy"
+             alt="Syanne in her gown outside a brick campus building on a spring day">
+        <figcaption>A spring afternoon on campus</figcaption>
+      </figure>
+      <figure>
+        <img src="images/reel-11-stairs.jpg" width="800" height="1067" loading="lazy"
+             alt="Syanne in cap and gown seated on a wooden staircase">
+        <figcaption>On the old staircase</figcaption>
+      </figure>
+      <figure>
+        <img src="images/reel-12-stairs-family.jpg" width="800" height="1202" loading="lazy"
+             alt="Syanne in cap and gown with family on a wooden staircase">
+        <figcaption>Family, graduation day</figcaption>
+      </figure>
+      <figure>
+        <img src="images/reel-13-stairs-three.jpg" width="800" height="1063" loading="lazy"
+             alt="Syanne in cap and gown with two family members on a staircase">
+        <figcaption>The people who got me here</figcaption>
+      </figure>
+    </div>
+  </section>
+
   <section id="contact">
     <h2>Contact</h2>
     <p>
@@ -298,6 +458,39 @@
     <p>&copy; 2026 Syanne Voxland</p>
   </div>
 </footer>
+
+<script>
+// Highlight the nav link for whichever section is currently in view.
+// Progressive enhancement: with JS off, the nav still works as plain anchors.
+(function () {
+  var links = {};
+  document.querySelectorAll('.site-nav a').forEach(function (a) {
+    links[a.getAttribute('href').slice(1)] = a;
+  });
+
+  var visible = new Set();
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) visible.add(entry.target.id);
+      else visible.delete(entry.target.id);
+    });
+
+    var order = Object.keys(links);
+    var current = order.find(function (id) { return visible.has(id); });
+
+    order.forEach(function (id) {
+      links[id].classList.toggle('is-active', id === current);
+      if (id === current) links[id].setAttribute('aria-current', 'true');
+      else links[id].removeAttribute('aria-current');
+    });
+  }, { rootMargin: '-64px 0px -55% 0px' });
+
+  document.querySelectorAll('main section[id]').forEach(function (section) {
+    observer.observe(section);
+  });
+})();
+</script>
 
 </body>
 </html>
