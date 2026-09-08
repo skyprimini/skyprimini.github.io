@@ -305,7 +305,6 @@ section > p {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scrollbar-width: thin;
-  /* fade the right edge to hint that the strip keeps going */
   mask-image: linear-gradient(to right, #000 0, #000 93%, transparent 100%);
 }
 
@@ -338,8 +337,7 @@ section > p {
   border-color: var(--accent);
 }
 
-/* Captions stay in the DOM for the enlarged view and for screen readers,
-   but the strip itself reads better as plain thumbnails. */
+/* Hidden here, but still read by the preview and by screen readers. */
 .reel figcaption {
   position: absolute;
   width: 1px;
@@ -406,7 +404,6 @@ section > p {
 
 .skill-groups {
   display: grid;
-  /* fixed 2x2: auto-fit stranded the fourth group alone on its own row */
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 28px 36px;
 }
@@ -541,7 +538,7 @@ section > p {
   }
   .hero-photo {
     order: -1;
-    justify-self: start;   /* only the photo shrinks; text still stretches and wraps */
+    justify-self: start;   
     width: 190px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;

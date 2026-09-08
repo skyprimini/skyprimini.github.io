@@ -1,6 +1,6 @@
-# Original camera files: large, HEIC (unsupported in Chrome/Firefox), and they
-# still carry EXIF GPS coordinates. Only the stripped, resized copies in images/
-# are committed and published.
+# Camera originals stay local. They're huge, HEIC doesn't work in most
+# browsers, and they still have GPS data in them. The web-ready copies
+# in images/ are what actually gets published.
 pictures/
 
 .DS_Store

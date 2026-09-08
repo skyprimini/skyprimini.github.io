@@ -397,7 +397,7 @@
       <figure>
         <button type="button" class="photo-btn" aria-label="Show larger photo: Computer science classmates around a long table at a restaurant"><img data-full="images/full/reel-05-cs-dinner.jpg" src="images/reel-05-cs-dinner.jpg" width="800" height="1067" loading="lazy"
              alt="Computer science classmates around a long table at a restaurant"></button>
-        <figcaption>Celebrating the end of a semester</figcaption>
+        <figcaption>Lunch time together as computer science students</figcaption>
       </figure>
       <figure>
         <button type="button" class="photo-btn" aria-label="Show larger photo: A group of graduates in green caps and gowns at the arena"><img data-full="images/full/reel-06-cohort.jpg" src="images/reel-06-cohort.jpg" width="800" height="600" loading="lazy"
@@ -407,32 +407,27 @@
       <figure>
         <button type="button" class="photo-btn" aria-label="Show larger photo: Syanne in cap and gown with family at the NDSU bison statue"><img data-full="images/full/reel-07-bison.jpg" src="images/reel-07-bison.jpg" width="800" height="1067" loading="lazy"
              alt="Syanne in cap and gown with family at the NDSU bison statue"></button>
-        <figcaption>At the bison statue</figcaption>
+        <figcaption>At the bison statue, with both of my parents</figcaption>
       </figure>
       <figure>
         <button type="button" class="photo-btn" aria-label="Show larger photo: Syanne in cap and gown with two friends indoors"><img data-full="images/full/reel-08-friends.jpg" src="images/reel-08-friends.jpg" width="800" height="1067" loading="lazy"
              alt="Syanne in cap and gown with two friends indoors"></button>
-        <figcaption>With friends after the ceremony</figcaption>
+        <figcaption>With best friends after the ceremony</figcaption>
       </figure>
       <figure>
         <button type="button" class="photo-btn" aria-label="Show larger photo: Syanne holding her diploma outdoors with family"><img data-full="images/full/reel-09-diploma.jpg" src="images/reel-09-diploma.jpg" width="800" height="499" loading="lazy"
              alt="Syanne holding her diploma outdoors with family"></button>
-        <figcaption>Diploma in hand</figcaption>
+        <figcaption>Diploma in hand with my in-laws and husband</figcaption>
       </figure>
       <figure>
         <button type="button" class="photo-btn" aria-label="Show larger photo: Syanne in her gown outside a brick campus building on a spring day"><img data-full="images/full/reel-10-campus.jpg" src="images/reel-10-campus.jpg" width="800" height="1067" loading="lazy"
              alt="Syanne in her gown outside a brick campus building on a spring day"></button>
-        <figcaption>A spring afternoon on campus</figcaption>
+        <figcaption>A spring afternoon on campus, which my husband Michael</figcaption>
       </figure>
       <figure>
         <button type="button" class="photo-btn" aria-label="Show larger photo: Syanne in cap and gown seated on a wooden staircase"><img data-full="images/full/reel-11-stairs.jpg" src="images/reel-11-stairs.jpg" width="800" height="1067" loading="lazy"
              alt="Syanne in cap and gown seated on a wooden staircase"></button>
-        <figcaption>On the old staircase</figcaption>
-      </figure>
-      <figure>
-        <button type="button" class="photo-btn" aria-label="Show larger photo: Syanne in cap and gown with family on a wooden staircase"><img data-full="images/full/reel-12-stairs-family.jpg" src="images/reel-12-stairs-family.jpg" width="800" height="1202" loading="lazy"
-             alt="Syanne in cap and gown with family on a wooden staircase"></button>
-        <figcaption>Family, graduation day</figcaption>
+        <figcaption>On campus in the South Engineering build at NDSU</figcaption>
       </figure>
       <figure>
         <button type="button" class="photo-btn" aria-label="Show larger photo: Syanne in cap and gown with two family members on a staircase"><img data-full="images/full/reel-13-stairs-three.jpg" src="images/reel-13-stairs-three.jpg" width="800" height="1063" loading="lazy"
@@ -465,8 +460,8 @@
 </footer>
 
 <script>
-// Highlight the nav link for whichever section is currently in view.
-// Progressive enhancement: with JS off, the nav still works as plain anchors.
+// Highlights the nav link for whatever section you're currently reading.
+// If JS is off the nav still works, it just doesn't highlight.
 (function () {
   var links = {};
   document.querySelectorAll('.site-nav a').forEach(function (a) {
@@ -496,8 +491,8 @@
   });
 })();
 
-// Photos: clicking a thumbnail swaps the larger preview above the strip.
-// With JS off the preview simply stays on the first photo.
+// Picking a thumbnail swaps out the big preview above the strip.
+// If JS is off the preview just stays on the first photo.
 (function () {
   var preview = document.querySelector('.photo-preview');
   var reel = document.querySelector('.reel');
@@ -525,7 +520,7 @@
     });
 
     if (moveFocus) btn.focus();
-    // keep the active thumbnail visible without scrolling the page itself
+
     var r = btn.getBoundingClientRect(), rr = reel.getBoundingClientRect();
     if (r.left < rr.left || r.right > rr.right) {
       reel.scrollLeft += (r.left - rr.left) - (rr.width - r.width) / 2;
