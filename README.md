@@ -11,4 +11,4 @@ Live site: https://skyprimini.github.io/
 - GitHub Pages
 
 ## Status
-In active development — see the [Issues](../../issues) and [Project board](https://github.com/users/skyprimini/projects/2) for planned work.
+In active development, see the [Issues](../../issues) and [Project board](https://github.com/users/skyprimini/projects/2) for planned work.
