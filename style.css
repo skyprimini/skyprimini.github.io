@@ -315,7 +315,7 @@ section > p {
 }
 
 .reel figure {
-  flex: 0 0 240px;
+  flex: 0 0 168px;
   margin: 0;
   scroll-snap-align: start;
 }
@@ -399,21 +399,16 @@ section > p {
   box-shadow: 0 10px 24px rgba(28, 32, 39, 0.09);
 }
 
-.card-featured {
-  grid-column: 1 / -1;
-}
-
 .card-image {
   display: block;
-  width: calc(100% + 44px);
-  height: auto;          /* override the height="" presentational hint */
-  margin: -20px -22px 18px;
-  max-width: none;
+  width: 100%;
+  height: auto;
+  margin: 0 0 14px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  object-position: center 45%;
-  border-radius: 9px 9px 0 0;
-  border-bottom: 1px solid var(--rule);
+  object-position: center 50%;
+  border-radius: 7px;
+  border: 1px solid var(--rule);
 }
 
 .card h3 {
@@ -478,10 +473,10 @@ section > p {
   .header-inner {
     grid-template-columns: 1fr;
     gap: 32px;
-    justify-items: start;
   }
   .hero-photo {
     order: -1;
+    justify-self: start;   /* only the photo shrinks; text still stretches and wraps */
     width: 190px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
